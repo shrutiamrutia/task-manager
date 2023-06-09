@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
 }
 
 *:focus{
@@ -49,7 +48,6 @@ form input{
 form input,
 form input::placeholder{
   letter-spacing: 0.7px;
-  font-size: 18px;
 }
 
 form button,
@@ -70,7 +68,6 @@ form button,
   letter-spacing: 1px;
   border: 1px solid lightseagreen;
   color: lightseagreen;
-  /* font-size: 70px; */
 }
 
 /* the four sections style */
@@ -122,7 +119,7 @@ form button,
   color: #fff;  
 }
 li{
-  /* width: fit-content; */
+  width: fit-content;
   padding: 20px;
   list-style: none;
   text-align: center;
@@ -188,6 +185,39 @@ li p span{
 
 /* descrition box style */
 
+#descrpContainer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px -8px 20px rgb(165, 164, 164);
+  max-height: 0;
+  animation-name: hide;
+  animation-duration: 2s;
+  animation-fill-mode: ease-in-out;
+}
+
+#descrpWrapper{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10vh 0;
+  z-index: 100;
+}
+
+#description{
+  border: none;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 10vh;
+  padding: 3vh;
+  background-color: #eee;
+}
+
+#description,
+#description::placeholder{
+  font-size: 1rem;
+}
 
 /* animation to desplay decription box */
 
@@ -214,82 +244,8 @@ li p span{
       opacity: 0;
   }
 }
-
 .form-container{
   display: flex;
+
   justify-content: center;
 }
-
-form input {
-  width: 70%;
-}
-
-/* Adjust the padding and margin of the form buttons */
-form button,
-#save,
-#cancel {
-  padding: 10px 15px;
-  margin-right: 1rem;
-}
-
-/* Increase the height of the task sections */
-.tasksSection {
-  height: 70vh;
-}
-
-/* Increase the padding of list items */
-li {
-  padding: 30px;
-}
-
-/* Adjust the font size of the description box */
-#description,
-#description::placeholder {
-  font-size: 1.2rem;
-}
- .span{
-  font-size: 25px;
-color: black;
-margin-right: 40px;
-box-sizing: border-box;
-display: block;
-margin-right: 10px ;
-}
-
-
-
-.span1{
-  font-size: 26px;
-}
-.edit{
-  font-size: 20px;
-  margin: 5px;
-} 
-#review li{
-  background-color:aliceblue;
-  border-radius: 31px;
-  margin: 36px;
-  padding: 50px;
-  color: black;
-  font-size: 14px;
-    font-weight: 500;
-}
-
-/* #inProgress li{
-  background-color: lightgrey;
-  border-radius: 31px;
-  margin: 36px;
-  padding: 50px;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-}
-#hold li{
-  background-color: #d3e6ff;
-  border-radius: 31px;
-  margin: 36px;
-  padding: 50px;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-} */
